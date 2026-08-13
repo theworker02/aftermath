@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Aftermath demo storyboard</title>
+  <desc id="desc">Four-panel storyboard: baseline, agent change, verify fail, repair and re-verify.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F14"/>
+      <stop offset="100%" stop-color="#162029"/>
+    </linearGradient>
+    <style>
+      .panel { fill: #12181f; stroke: #2a3642; stroke-width: 2; }
+      .t { font-family: ui-monospace, Consolas, monospace; fill: #E8EEF5; }
+      .muted { fill: #8AA0B2; }
+      .ok { fill: #A8C5A2; }
+      .bad { fill: #D4A5A5; }
+      .accent { fill: #7C9CB4; }
+    </style>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <text class="t" x="40" y="42" font-size="22">Aftermath · demo storyboard</text>
+  <text class="t muted" x="40" y="68" font-size="13">Record as assets/demo.gif from examples/broken-project (see assets/demo.md)</text>
+
+  <!-- Panel 1 -->
+  <rect class="panel" x="36" y="96" width="430" height="190" rx="8"/>
+  <text class="t accent" x="56" y="128" font-size="14">1 · Baseline</text>
+  <text class="t" x="56" y="160" font-size="13">aftermath baseline</text>
+  <text class="t ok" x="56" y="190" font-size="13">Build PASS · Tests PASS</text>
+  <text class="t muted" x="56" y="220" font-size="12">.aftermath/baseline.json written</text>
+  <text class="t muted" x="56" y="248" font-size="12">Never silently overwritten</text>
+
+  <!-- Panel 2 -->
+  <rect class="panel" x="494" y="96" width="430" height="190" rx="8"/>
+  <text class="t accent" x="514" y="128" font-size="14">2 · Agent change</text>
+  <text class="t" x="514" y="160" font-size="13">Cursor implements a change</text>
+  <text class="t muted" x="514" y="190" font-size="12">Implementation complete</text>
+  <text class="t" x="514" y="220" font-size="13">Repository may disagree</text>
+  <text class="t muted" x="514" y="248" font-size="12">Diff captured under .aftermath/runs/</text>
+
+  <!-- Panel 3 -->
+  <rect class="panel" x="36" y="310" width="430" height="190" rx="8"/>
+  <text class="t accent" x="56" y="342" font-size="14">3 · Verify</text>
+  <text class="t" x="56" y="374" font-size="13">/aftermath-verify</text>
+  <text class="t bad" x="56" y="404" font-size="13">Tests FAIL · AF001</text>
+  <text class="t" x="56" y="434" font-size="13">Verdict: PARTIALLY VERIFIED</text>
+  <text class="t muted" x="56" y="462" font-size="12">Receipt + repair-context.md</text>
+
+  <!-- Panel 4 -->
+  <rect class="panel" x="494" y="310" width="430" height="190" rx="8"/>
+  <text class="t accent" x="514" y="342" font-size="14">4 · Repair loop</text>
+  <text class="t" x="514" y="374" font-size="13">/aftermath-repair ’ fix ’ verify</text>
+  <text class="t muted" x="514" y="404" font-size="12">Attempt counts persisted per fingerprint</text>
+  <text class="t ok" x="514" y="434" font-size="13">Gates PASS · VERIFIED</text>
+  <text class="t muted" x="514" y="462" font-size="12">Trust the evidence, not the message</text>
+</svg>

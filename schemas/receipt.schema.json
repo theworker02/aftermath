@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/theworker02/aftermath/schemas/receipt.schema.json",
+  "title": "Aftermath Receipt",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "runNumber",
+    "createdAt",
+    "verdict",
+    "repository",
+    "git",
+    "change",
+    "checks",
+    "findings"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string" },
+    "runNumber": { "type": "integer", "minimum": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "verdict": {
+      "type": "string",
+      "enum": ["verified", "partially_verified", "failed", "inconclusive", "cancelled"]
+    },
+    "checks": { "type": "array" },
+    "findings": { "type": "array" }
+  },
+  "additionalProperties": true
+}

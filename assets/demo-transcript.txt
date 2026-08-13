@@ -1,0 +1,55 @@
+AFTERMATH DEMO TRANSCRIPT
+example: examples/broken-project
+date: 2026-08-13
+
+$ aftermath baseline
+Baseline created at .aftermath/baseline.json
+
+# (agent edits code; claims "done")
+
+$ aftermath verify
+AFTERMATH
+Verification #1
+Repository: broken-project
+Change: 2 files  +18 -3
+Repair attempts: 0
+
+BUILD     PASS ok
+TEST      FAIL 1 failed
+
+Category summary:
+- build: 1 pass / 0 fail / 0 other
+- test: 0 pass / 1 fail / 0 other
+
+Most important failure:
+- test/test: 1 failed
+
+Findings:
+- error:AF001 ×1
+- AF001 TEST_FAILURE: test failed (exit 1)
+
+VERDICT
+PARTIALLY VERIFIED
+
+Evidence:
+.aftermath/runs/0001/
+
+$ aftermath repair-context 1
+# Repair context written; repair attempts for fingerprint: 1
+
+# (agent applies targeted fix)
+
+$ aftermath verify
+...
+VERDICT
+VERIFIED
+
+$ aftermath compare
+AFTERMATH COMPARE
+Baseline created: 2026-08-13T...
+Compared against: run #2 (verdict: verified)
+Metric deltas:
+- warnings: baseline=0 current=0 delta=0 (same)
+...
+Highlights:
+- No error findings; latest run met verification gates.

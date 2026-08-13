@@ -1,0 +1,89 @@
+{
+  "name": "aftermath",
+  "displayName": "Aftermath",
+  "description": "Independent verification for agent-written code — receipts, findings, baselines.",
+  "version": "0.4.0",
+  "publisher": "aftermath",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other", "Testing"],
+  "keywords": ["aftermath", "verification", "receipts", "cursor", "testing"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theworker02/aftermath.git"
+  },
+  "homepage": "https://theworker02.github.io/aftermath/",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aftermath.verify",
+        "title": "Aftermath: Verify Repository",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.baseline",
+        "title": "Aftermath: Create Baseline",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.showStatus",
+        "title": "Aftermath: Show Status",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.showLatestReceipt",
+        "title": "Aftermath: Open Latest Receipt",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.showLatestHtmlReceipt",
+        "title": "Aftermath: Open Latest HTML Receipt",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.compareBaseline",
+        "title": "Aftermath: Compare With Baseline",
+        "category": "Aftermath"
+      },
+      {
+        "command": "aftermath.prepareRepair",
+        "title": "Aftermath: Prepare Repair Context",
+        "category": "Aftermath"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "aftermath",
+          "title": "Aftermath",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "aftermath": [
+        {
+          "id": "aftermath.panel",
+          "name": "Aftermath"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -p ./ -w",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.8.2"
+  }
+}

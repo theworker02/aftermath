@@ -1,0 +1,45 @@
+name: Bug report
+description: Report incorrect verification behavior or a reproducible failure
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Aftermath. Please include evidence (receipts, commands) when possible.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Expected vs actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Steps, fixture, or minimal repo shape
+      placeholder: |
+        1. aftermath baseline
+        2. ...
+        3. aftermath verify
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Aftermath version
+      placeholder: 0.3.0
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows
+        - macOS
+        - Linux
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Paste console summary, finding codes, or paths under `.aftermath/runs/` (redact secrets)

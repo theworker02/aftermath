@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Aftermath light">
+  <rect width="128" height="128" fill="#F4F7FA"/>
+  <path d="M64 18 L104 110 H88 L80 92 H48 L40 110 H24 Z" fill="none" stroke="#121820" stroke-width="6"/>
+  <path d="M52 86 L64 56 L76 86" fill="none" stroke="#121820" stroke-width="6"/>
+  <path d="M64 56 L64 92 M64 72 L78 84 M64 80 L74 94" fill="none" stroke="#3E5A70" stroke-width="3"/>
+  <circle cx="78" cy="84" r="3" fill="#3F6B4F"/>
+  <circle cx="74" cy="94" r="3" fill="#3F6B4F"/>
+</svg>

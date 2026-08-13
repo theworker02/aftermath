@@ -1,0 +1,23 @@
+{
+  "name": "aftermath",
+  "displayName": "Aftermath",
+  "version": "0.4.0",
+  "description": "Independent verification for agent-written code. Trust the evidence, not the completion message.",
+  "author": {
+    "name": "theworker02",
+    "email": "theworker02@users.noreply.github.com"
+  },
+  "homepage": "https://theworker02.github.io/aftermath/",
+  "repository": "https://github.com/theworker02/aftermath",
+  "license": "MIT",
+  "keywords": [
+    "verification",
+    "testing",
+    "ci",
+    "receipts",
+    "baselines",
+    "coding-agents",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg"
+}

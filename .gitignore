@@ -1,0 +1,31 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Aftermath local run data (keep baseline when teams choose to commit it)
+.aftermath/runs/
+.aftermath/receipts/
+.aftermath/cache/
+.aftermath/*.log
+
+# Extension build
+extension/out/
+extension/*.vsix
+extension/node_modules/
+
+# Website build
+website/dist/
+website/.astro/
+
+# OS / editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp

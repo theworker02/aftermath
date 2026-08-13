@@ -1,0 +1,31 @@
+name: Aftermath Verification
+
+# Example workflow consumers can copy.
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  aftermath:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Aftermath
+        run: npm install -g .
+      - name: Validate configuration
+        run: aftermath config validate
+      - name: Aftermath Verification
+        run: aftermath verify --ci --json | tee aftermath-summary.json
+      - name: Upload receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aftermath-receipts
+          path: |
+            .aftermath/receipts/
+            .aftermath/runs/
+            aftermath-summary.json
+          if-no-files-found: ignore

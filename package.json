@@ -1,0 +1,90 @@
+{
+  "name": "aftermath",
+  "version": "0.4.0",
+  "description": "Independent verification for agent-written code.",
+  "license": "MIT",
+  "author": {
+    "name": "theworker02",
+    "url": "https://github.com/theworker02"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theworker02/aftermath.git"
+  },
+  "homepage": "https://theworker02.github.io/aftermath/",
+  "bugs": {
+    "url": "https://github.com/theworker02/aftermath/issues"
+  },
+  "keywords": [
+    "cursor",
+    "cursor-plugin",
+    "developer-tools",
+    "code-quality",
+    "testing",
+    "verification",
+    "ai-agents",
+    "coding-agents",
+    "mcp",
+    "ci"
+  ],
+  "type": "module",
+  "bin": {
+    "aftermath": "./dist/cli/index.js"
+  },
+  "main": "./dist/core/index.js",
+  "types": "./dist/core/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp/index.d.ts",
+      "import": "./dist/mcp/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "assets",
+    "commands",
+    "skills",
+    "agents",
+    "hooks",
+    "rules",
+    "schemas",
+    ".cursor-plugin",
+    "mcp.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node scripts/clean.mjs",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate:plugin": "node scripts/validate-plugin.mjs",
+    "doctor": "node dist/cli/index.js doctor",
+    "cli": "node dist/cli/index.js",
+    "mcp": "node dist/mcp/index.js",
+    "prepare-assets": "node scripts/generate-png-assets.mjs",
+    "prepublishOnly": "npm run build && npm run validate:plugin && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "smol-toml": "^1.3.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

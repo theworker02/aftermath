@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Aftermath">
+  <rect width="128" height="128" fill="#0B0F14"/>
+  <path d="M64 18 L104 110 H88 L80 92 H48 L40 110 H24 Z" fill="none" stroke="#E8EEF5" stroke-width="6" stroke-linejoin="miter"/>
+  <path d="M52 86 L64 56 L76 86" fill="none" stroke="#E8EEF5" stroke-width="6"/>
+  <path d="M64 56 L64 92" fill="none" stroke="#7C9CB4" stroke-width="3"/>
+  <path d="M64 72 L78 84" fill="none" stroke="#7C9CB4" stroke-width="3"/>
+  <path d="M64 80 L74 94" fill="none" stroke="#7C9CB4" stroke-width="3"/>
+  <circle cx="78" cy="84" r="3" fill="#A8C5A2"/>
+  <circle cx="74" cy="94" r="3" fill="#A8C5A2"/>
+</svg>

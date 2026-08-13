@@ -1,0 +1,54 @@
+# Example Aftermath configuration
+version = 1
+
+[verify]
+# Prefer repository truth. These override discovery when set.
+# build = ["npm run build"]
+# test = ["npm test"]
+# lint = ["npm run lint"]
+# typecheck = ["npm run typecheck"]
+# format = ["npm run format"]
+
+# [[smoke]]
+# name = "api"
+# command = "node ./scripts/dev-server.js"
+# ready_pattern = "listening on :3000"
+# timeout_seconds = 30
+
+# [[smoke]]
+# name = "cli-version"
+# command = "node dist/cli/index.js version"
+# timeout_seconds = 20
+
+# [[benchmark]]
+# name = "throughput"
+# command = "node scripts/bench.js"
+# metric = "ops_per_sec"
+# direction = "higher"
+# regression_threshold_percent = 10
+
+# [[artifact]]
+# name = "bundle"
+# path = "dist/bundle.js"
+# max_growth_percent = 20
+
+[policy]
+tests_must_pass = true
+allow_new_warnings = false
+allow_removed_tests = false
+allow_assertion_reduction = false
+allow_api_breaks = false
+# Stop suggesting automatic repair loops after this many attempts per change fingerprint
+max_repair_attempts = 3
+
+[limits]
+command_timeout_seconds = 900
+max_log_mb = 25
+max_run_storage_mb = 500
+
+[redaction]
+# Extra redaction regex patterns (optional)
+# patterns = ["(?i)my_custom_token\\s*=\\s*\\S+"]
+
+[scope]
+skip_benchmarks_on_docs_only = true

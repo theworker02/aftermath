@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: Aftermath
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - family-names: theworker02
+    website: https://github.com/theworker02
+repository-code: https://github.com/theworker02/aftermath
+url: https://theworker02.github.io/aftermath/
+abstract: >-
+  Aftermath is a local-first verification engine and Cursor plugin for
+  agent-written code. It executes configured gates, compares baselines, and
+  produces durable receipts — without telemetry or required API keys.
+keywords:
+  - verification
+  - coding-agents
+  - cursor
+  - testing
+  - receipts
+  - baselines
+license: MIT
+version: 0.4.0
+date-released: "2026-08-13"

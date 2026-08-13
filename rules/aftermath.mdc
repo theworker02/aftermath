@@ -1,0 +1,19 @@
+---
+description: Completion guard — verify substantial repository work with Aftermath before claiming success
+alwaysApply: false
+globs:
+---
+
+# Aftermath completion guard
+
+For repository-modifying tasks, run Aftermath verification before claiming successful completion when Aftermath is available.
+
+## Principles
+
+1. An agent completion message is not verification evidence.
+2. After substantial code changes, run `/aftermath-verify` or `aftermath verify`.
+3. Only claim configured verification gates passed when the receipt verdict is `VERIFIED`.
+4. If verification is `PARTIALLY VERIFIED` or `FAILED`, report the receipt and offer `/aftermath-repair`.
+5. Optionally run `aftermath status` for a one-line snapshot of the latest verdict.
+6. Do not trap yourself in infinite verification/repair loops. After a few attempts, stop and present remaining evidence.
+7. Users may disable this rule; respect explicit user instructions to skip verification.

@@ -1,0 +1,27 @@
+name: Plugin validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:plugin
+      - name: Ensure referenced hook scripts exist
+        run: |
+          test -f scripts/hooks/session-start.mjs
+          test -f scripts/hooks/agent-stop.mjs
+          test -f commands/verify.md
+          test -f skills/aftermath-verification/SKILL.md
+          test -f agents/verifier.md
+          test -f rules/aftermath.mdc
+          test -f mcp.json

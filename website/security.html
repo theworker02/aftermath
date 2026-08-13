@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security — Aftermath</title>
+    <meta name="description" content="Aftermath security model: local execution, argv spawn, redaction." />
+    <meta property="og:title" content="Security — Aftermath" />
+    <meta property="og:description" content="Local execution, argv spawn, redaction — no cloud backend." />
+    <meta property="og:image" content="https://theworker02.github.io/aftermath/assets/banner.svg" />
+    <link rel="icon" href="./assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="./">Aftermath</a>
+      <nav>
+        <a href="./docs.html">Docs</a>
+        <a href="./install.html">Install</a>
+        <a href="./security.html">Security</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./changelog.html">Changelog</a>
+        <a href="https://github.com/theworker02/aftermath">GitHub</a>
+      </nav>
+    </header>
+    <main class="doc">
+      <h1>Security</h1>
+      <p>
+        Aftermath executes repository commands to produce verification evidence. Treat it as a
+        privileged local tool.
+      </p>
+      <ul>
+        <li>No shell interpolation for planned commands (argv <code>spawn</code>)</li>
+        <li>Destructive patterns require approval</li>
+        <li>Strict config schema validation for <code>.aftermath.toml</code></li>
+        <li>Best-effort secret redaction and log size limits</li>
+        <li>No required cloud backend or API keys</li>
+      </ul>
+      <p>
+        Do not run against untrusted repositories without reviewing
+        <code>.aftermath.toml</code>, package scripts, and CI workflows that may be discovered.
+      </p>
+      <p>
+        Full policy:
+        <a href="https://github.com/theworker02/aftermath/blob/main/SECURITY.md">SECURITY.md</a>
+        ·
+        <a href="https://github.com/theworker02/aftermath/blob/main/docs/threat-model.md"
+          >threat model</a
+        >
+      </p>
+    </main>
+    <footer>
+      <p>Local-first. No telemetry. MIT License.</p>
+    </footer>
+  </body>
+</html>

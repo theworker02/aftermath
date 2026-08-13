@@ -1,0 +1,8 @@
+version = 1
+
+[verify]
+test = ["node test.js"]
+
+[policy]
+tests_must_pass = true
+allow_new_warnings = false

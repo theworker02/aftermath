@@ -1,0 +1,6 @@
+runs/
+receipts/
+cache/
+*.log
+
+# Optionally commit baseline.json

@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node ./scripts/hooks/session-start.mjs"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node ./scripts/hooks/agent-stop.mjs"
+      }
+    ]
+  }
+}

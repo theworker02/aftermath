@@ -1,0 +1,7 @@
+{
+  "name": "node-test-removal",
+  "private": true,
+  "scripts": {
+    "test": "node test.js"
+  }
+}

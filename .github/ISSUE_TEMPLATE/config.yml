@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security report
+    url: https://github.com/theworker02/aftermath/security/advisories/new
+    about: Please report vulnerabilities privately via GitHub Security Advisories.
+  - name: Docs site
+    url: https://theworker02.github.io/aftermath/
+    about: Install, privacy, and security overview.

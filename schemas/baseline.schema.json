@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/theworker02/aftermath/schemas/baseline.schema.json",
+  "title": "Aftermath Baseline",
+  "type": "object",
+  "required": ["schemaVersion", "createdAt", "repository", "checks", "warnings"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "createdAt": { "type": "string" },
+    "warnings": { "type": "number" },
+    "checks": { "type": "array" }
+  },
+  "additionalProperties": true
+}

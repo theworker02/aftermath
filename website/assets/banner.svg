@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-label="Aftermath banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F14"/>
+      <stop offset="100%" stop-color="#151C24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g transform="translate(120,160)">
+    <path d="M80 20 L150 180 H125 L112 150 H48 L35 180 H10 Z" fill="none" stroke="#E8EEF5" stroke-width="8"/>
+    <path d="M58 140 L80 90 L102 140" fill="none" stroke="#E8EEF5" stroke-width="8"/>
+    <path d="M80 90 V150 M80 115 L105 135 M80 128 L98 150" stroke="#7C9CB4" stroke-width="4" fill="none"/>
+    <circle cx="105" cy="135" r="5" fill="#A8C5A2"/>
+    <circle cx="98" cy="150" r="5" fill="#A8C5A2"/>
+  </g>
+  <text x="340" y="250" fill="#E8EEF5" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700">AFTERMATH</text>
+  <text x="340" y="330" fill="#9BB0C2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28">Trust the evidence, not the completion message.</text>
+  <text x="340" y="390" fill="#6F8496" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">Independent verification for agent-written code.</text>
+  <rect x="120" y="520" width="1040" height="1" fill="#2A3542"/>
+  <text x="120" y="570" fill="#6F8496" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">agent finishes  ?  Aftermath investigates  ?  evidence remains</text>
+</svg>

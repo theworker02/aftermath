@@ -1,0 +1,7 @@
+{
+  "name": "mixed-frontend",
+  "private": true,
+  "scripts": {
+    "test": "node -e \"process.exit(0)\""
+  }
+}
