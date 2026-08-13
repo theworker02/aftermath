@@ -17,5 +17,5 @@
   <text x="340" y="330" fill="#9BB0C2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28">Trust the evidence, not the completion message.</text>
   <text x="340" y="390" fill="#6F8496" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">Independent verification for agent-written code.</text>
   <rect x="120" y="520" width="1040" height="1" fill="#2A3542"/>
-  <text x="120" y="570" fill="#6F8496" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">agent finishes  ?  Aftermath investigates  ?  evidence remains</text>
+  <text x="120" y="570" fill="#6F8496" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">agent finishes  →  Aftermath investigates  →  evidence remains</text>
 </svg>

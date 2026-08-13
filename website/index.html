@@ -6,7 +6,7 @@
     <title>Aftermath — Trust the evidence</title>
     <meta
       name="description"
-      content="Independent verification for agent-written code. Local-first receipts, baselines, and CI-ready summaries — no telemetry."
+      content="Independent verification for agent-written code. Local-first receipts, baselines, and CI-ready evidence — no telemetry."
     />
     <meta property="og:title" content="Aftermath — Trust the evidence" />
     <meta
@@ -15,75 +15,151 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://theworker02.github.io/aftermath/" />
-    <meta property="og:image" content="https://theworker02.github.io/aftermath/assets/banner.svg" />
+    <meta
+      property="og:image"
+      content="https://theworker02.github.io/aftermath/assets/social-preview.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="./assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
     <header class="top">
-      <a class="brand" href="./">Aftermath</a>
-      <nav>
+      <a class="brand" href="./">
+        <img src="./assets/logo-mark.svg" alt="" width="24" height="24" />
+        Aftermath
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="./docs.html">Docs</a>
         <a href="./install.html">Install</a>
         <a href="./security.html">Security</a>
         <a href="./privacy.html">Privacy</a>
         <a href="./changelog.html">Changelog</a>
-        <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        <a class="nav-github" href="https://github.com/theworker02/aftermath">GitHub</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <img class="mark" src="./assets/logo-mark.svg" alt="" />
-        <p class="eyebrow">AFTERMATH</p>
-        <h1>Trust the evidence,<br />not the completion message.</h1>
-        <p class="lede">
-          Independent verification for agent-written code. Execute the gates. Keep the receipt —
-          Markdown, JSON, HTML, and CI summaries. Local-first. No telemetry.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="./install.html">Install</a>
-          <a class="btn" href="./docs.html">Read the docs</a>
-          <a class="btn" href="https://github.com/theworker02/aftermath">View source</a>
+        <div class="hero-plane" aria-hidden="true"></div>
+        <div class="hero-content reveal is-visible">
+          <p class="brand-lockup">Aftermath</p>
+          <h1>Trust the evidence, not the completion message.</h1>
+          <p class="lede">
+            Independent verification for agent-written code. Aftermath runs the gates and leaves a
+            durable receipt.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="./install.html">Install Aftermath</a>
+            <a class="btn" href="https://github.com/theworker02/aftermath">View source</a>
+          </div>
         </div>
       </section>
 
-      <section class="flow">
-        <pre>
-agent finishes
-     ↓
-Aftermath investigates
-     ↓
-receipt.md · receipt.html · summary.json
-        </pre>
+      <section class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">How it works</p>
+          <h2>The agent finishes. Aftermath investigates.</h2>
+          <p class="section-copy">
+            Claims are cheap. Exit codes, diffs, and baselines are not. Aftermath turns verification
+            into evidence you can inspect, compare, and reuse in repair loops.
+          </p>
+          <div class="process">
+            <div class="process-step">
+              <div class="process-index">01</div>
+              <div>
+                <strong>Agent writes</strong>
+                <p>Cursor (or any agent) changes the repository and reports completion.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-index">02</div>
+              <div>
+                <strong>Aftermath verifies</strong>
+                <p>
+                  Diff analysis, discovered commands, builds, tests, lint, typecheck, smoke, and
+                  policy checks — executed locally.
+                </p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="process-index">03</div>
+              <div>
+                <strong>Evidence remains</strong>
+                <p>
+                  A receipt in Markdown, HTML, and JSON. Findings with codes. Repair context when
+                  gates fail.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="doc" style="padding-top: 0">
-        <h2>Product pillars</h2>
-        <ul>
-          <li><strong>Evidence over claims</strong> — exit codes and metrics, not chat confidence</li>
-          <li><strong>Local-first</strong> — no account, no required API key, no telemetry</li>
-          <li><strong>Durable artifacts</strong> — receipts (MD/HTML/JSON), baselines, SARIF</li>
-          <li><strong>Operator clarity</strong> — <code>status</code>, <code>latest</code> alias, repair context</li>
-        </ul>
-        <h2>Phase 4 highlights</h2>
-        <ul>
-          <li>Shareable HTML receipts</li>
-          <li><code>aftermath status</code> and <code>latest</code> everywhere</li>
-          <li>Smoke <code>ready_pattern</code> with deterministic process stop</li>
-          <li>Automatic run storage pruning</li>
-        </ul>
+      <section class="section">
+        <div class="section-inner reveal">
+          <p class="section-kicker">The product</p>
+          <h2>A receipt proving what was actually verified.</h2>
+          <p class="section-copy">
+            Not an AI score. Not a vibes check. A deterministic verdict with preserved logs under
+            <code>.aftermath/</code>.
+          </p>
+          <div class="receipt-stage" aria-label="Example Aftermath receipt">
+            <div class="receipt-meta">
+              <span>AFTERMATH RECEIPT #184</span>
+              <span>LOCAL · NO TELEMETRY</span>
+            </div>
+            <pre class="receipt-body"><span class="ink">VERDICT</span>
+<span class="warn">PARTIALLY VERIFIED</span>
+
+<span class="ink">BUILD</span>     <span class="ok">PASS</span>
+<span class="ink">TESTS</span>     <span class="bad">941 passed · 4 failed</span>
+<span class="ink">LINT</span>      <span class="warn">2 new warnings</span>
+<span class="ink">API</span>       <span class="warn">1 potential break</span>
+
+Evidence: .aftermath/runs/0184/
+Next:     aftermath repair-context latest</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing">
+        <div class="section-inner reveal">
+          <p class="section-kicker">Start</p>
+          <h2>Make verification the last step of every substantial session.</h2>
+          <p class="section-copy">
+            Link the Cursor plugin, create a baseline, then run <code>/aftermath-verify</code> when
+            the agent says it’s done.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="./install.html">Install</a>
+            <a class="btn" href="./docs.html">Read the docs</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>
-        Local-first. No telemetry. MIT License. ·
-        <a href="https://github.com/sponsors/theworker02">Sponsors</a> ·
-        <a href="https://thanks.dev/u/gh/theworker02">thanks.dev</a> ·
-        <a href="https://github.com/theworker02/aftermath/blob/main/docs/README.md">Docs portal</a>
-      </p>
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div>Aftermath · Local-first · MIT</div>
+        <div class="footer-links">
+          <a href="./security.html">Security</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="https://github.com/sponsors/theworker02">Sponsors</a>
+          <a href="https://thanks.dev/u/gh/theworker02">thanks.dev</a>
+          <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        </div>
+      </div>
     </footer>
+
+    <script src="./site.js" defer></script>
   </body>
 </html>

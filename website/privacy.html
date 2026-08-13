@@ -7,53 +7,81 @@
     <meta name="description" content="Aftermath privacy: local-first, no telemetry." />
     <meta property="og:title" content="Privacy — Aftermath" />
     <meta property="og:description" content="Local-first. No telemetry. No required API keys." />
-    <meta property="og:image" content="https://theworker02.github.io/aftermath/assets/banner.svg" />
+    <meta
+      property="og:image"
+      content="https://theworker02.github.io/aftermath/assets/social-preview.png"
+    />
     <link rel="icon" href="./assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="site-bg" aria-hidden="true"></div>
     <header class="top">
-      <a class="brand" href="./">Aftermath</a>
-      <nav>
+      <a class="brand" href="./">
+        <img src="./assets/logo-mark.svg" alt="" width="24" height="24" />
+        Aftermath
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="./docs.html">Docs</a>
         <a href="./install.html">Install</a>
         <a href="./security.html">Security</a>
-        <a href="./privacy.html">Privacy</a>
+        <a href="./privacy.html" aria-current="page">Privacy</a>
         <a href="./changelog.html">Changelog</a>
-        <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        <a class="nav-github" href="https://github.com/theworker02/aftermath">GitHub</a>
       </nav>
     </header>
-    <main class="doc">
-      <h1>Privacy</h1>
-      <p>Aftermath is <strong>local-first</strong>.</p>
-      <ul>
-        <li>No telemetry in v0.x</li>
-        <li>No source uploads</li>
-        <li>No log uploads</li>
-        <li>No analytics</li>
-        <li>No required cloud service, account, or API key</li>
-      </ul>
-      <h2>What stays on disk</h2>
-      <p>
-        Verification evidence is written under <code>.aftermath/</code> in your repository (runs,
-        receipts, <code>summary.json</code>, optional baseline, repair-attempt cache). Redaction of
-        secrets in logs is best-effort.
-      </p>
-      <h2>Cursor</h2>
-      <p>
-        Using Aftermath as a Cursor plugin or local MCP server does not send Aftermath telemetry.
-        Cursor’s own model usage is separate from the verification engine.
-      </p>
-      <p>If telemetry is ever introduced, it will be explicit opt-in only.</p>
-      <p>
-        Full policy:
-        <a href="https://github.com/theworker02/aftermath/blob/main/docs/privacy.md"
-          >docs/privacy.md</a
-        >
-      </p>
+
+    <main class="page">
+      <div class="page-inner reveal is-visible">
+        <p class="page-kicker">Local-first</p>
+        <h1>Privacy</h1>
+        <p>Aftermath is <strong>local-first</strong>.</p>
+        <ul>
+          <li>No telemetry in v0.x</li>
+          <li>No source uploads</li>
+          <li>No log uploads</li>
+          <li>No analytics</li>
+          <li>No required cloud service, account, or API key</li>
+        </ul>
+
+        <h2>What stays on disk</h2>
+        <p>
+          Verification evidence is written under <code>.aftermath/</code> in your repository (runs,
+          receipts, <code>summary.json</code>, optional baseline, repair-attempt cache). Redaction of
+          secrets in logs is best-effort.
+        </p>
+
+        <h2>Cursor</h2>
+        <p>
+          Using Aftermath as a Cursor plugin or local MCP server does not send Aftermath telemetry.
+          Cursor’s own model usage is separate from the verification engine.
+        </p>
+        <p>If telemetry is ever introduced, it will be explicit opt-in only.</p>
+        <p>
+          Full policy:
+          <a href="https://github.com/theworker02/aftermath/blob/main/docs/privacy.md"
+            >docs/privacy.md</a
+          >
+        </p>
+      </div>
     </main>
-    <footer>
-      <p>Local-first. No telemetry. MIT License.</p>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div>Aftermath · Local-first · MIT</div>
+        <div class="footer-links">
+          <a href="./security.html">Security</a>
+          <a href="https://github.com/sponsors/theworker02">Sponsors</a>
+          <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        </div>
+      </div>
     </footer>
+    <script src="./site.js" defer></script>
   </body>
 </html>

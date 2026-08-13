@@ -4,69 +4,106 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Install — Aftermath</title>
-    <meta name="description" content="Install Aftermath as a Cursor local plugin or standalone CLI." />
+    <meta
+      name="description"
+      content="Install Aftermath as a Cursor local plugin or standalone CLI."
+    />
     <meta property="og:title" content="Install — Aftermath" />
-    <meta property="og:description" content="Install Aftermath as a Cursor local plugin or standalone CLI." />
-    <meta property="og:image" content="https://theworker02.github.io/aftermath/assets/banner.svg" />
+    <meta
+      property="og:description"
+      content="Install Aftermath as a Cursor local plugin or standalone CLI."
+    />
+    <meta
+      property="og:image"
+      content="https://theworker02.github.io/aftermath/assets/social-preview.png"
+    />
     <link rel="icon" href="./assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="site-bg" aria-hidden="true"></div>
     <header class="top">
-      <a class="brand" href="./">Aftermath</a>
-      <nav>
+      <a class="brand" href="./">
+        <img src="./assets/logo-mark.svg" alt="" width="24" height="24" />
+        Aftermath
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="./docs.html">Docs</a>
-        <a href="./install.html">Install</a>
+        <a href="./install.html" aria-current="page">Install</a>
         <a href="./security.html">Security</a>
         <a href="./privacy.html">Privacy</a>
         <a href="./changelog.html">Changelog</a>
-        <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        <a class="nav-github" href="https://github.com/theworker02/aftermath">GitHub</a>
       </nav>
     </header>
-    <main class="doc">
-      <h1>Install</h1>
 
-      <h2>Cursor — local plugin</h2>
-      <p>
-        Clone the repo, then link into <code>~/.cursor/plugins/local/aftermath</code>:
-      </p>
-      <pre># macOS / Linux
+    <main class="page">
+      <div class="page-inner reveal is-visible">
+        <p class="page-kicker">Get started</p>
+        <h1>Install</h1>
+
+        <h2>Cursor — local plugin</h2>
+        <p>
+          Clone the repository, then link into <code>~/.cursor/plugins/local/aftermath</code>:
+        </p>
+        <pre># macOS / Linux
 ./scripts/link-cursor-plugin.sh
 
 # Windows PowerShell
 ./scripts/link-cursor-plugin.ps1</pre>
-      <p>Reload the Cursor window. Allow third-party / user-local plugins if prompted.</p>
+        <p>Reload the Cursor window. Allow third-party / user-local plugins if prompted.</p>
 
-      <h2>Marketplace</h2>
-      <p>
-        As of <strong>2026-08-13</strong>, Aftermath is pending Cursor Marketplace submission.
-        Acceptance is <em>not</em> claimed until it happens.
-      </p>
+        <h2>Marketplace</h2>
+        <p>
+          As of <strong>2026-08-13</strong>, Aftermath is pending Cursor Marketplace submission.
+          Acceptance is <em>not</em> claimed until it happens.
+        </p>
 
-      <h2>CLI</h2>
-      <p>Requires Node.js ≥ 20.</p>
-      <pre>npm install
+        <h2>CLI</h2>
+        <p>Requires Node.js ≥ 20.</p>
+        <pre>npm install
 npm run build
 node dist/cli/index.js doctor
 node dist/cli/index.js config validate
 node dist/cli/index.js verify --json</pre>
+        <p>
+          Or install a release tarball from
+          <a href="https://github.com/theworker02/aftermath/releases">GitHub Releases</a>.
+        </p>
 
-      <h2>CI</h2>
-      <pre>aftermath verify --ci --json</pre>
-      <p>
-        See
-        <a href="https://github.com/theworker02/aftermath/blob/main/docs/ci.md">docs/ci.md</a>
-        for a full GitHub Actions example.
-      </p>
+        <h2>CI</h2>
+        <pre>aftermath verify --ci --json</pre>
+        <p>
+          See
+          <a href="https://github.com/theworker02/aftermath/blob/main/docs/ci.md">docs/ci.md</a>
+          for a full GitHub Actions example.
+        </p>
 
-      <h2>Optional extension</h2>
-      <p>
-        The <code>extension/</code> folder is an Open VSX-oriented companion UI (publisher id
-        <code>aftermath</code>). Core verification does not depend on it.
-      </p>
+        <h2>Optional extension</h2>
+        <p>
+          The <code>extension/</code> folder is an Open VSX-oriented companion UI (publisher id
+          <code>aftermath</code>). Core verification does not depend on it.
+        </p>
+      </div>
     </main>
-    <footer>
-      <p>Local-first. No telemetry. MIT License.</p>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div>Aftermath · Local-first · MIT</div>
+        <div class="footer-links">
+          <a href="./security.html">Security</a>
+          <a href="./privacy.html">Privacy</a>
+          <a href="https://github.com/sponsors/theworker02">Sponsors</a>
+          <a href="https://github.com/theworker02/aftermath">GitHub</a>
+        </div>
+      </div>
     </footer>
+    <script src="./site.js" defer></script>
   </body>
 </html>
