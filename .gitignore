@@ -2,6 +2,9 @@ node_modules/
 dist/
 coverage/
 *.tsbuildinfo
+*.tgz
+SHA256SUMS.txt
+RELEASE_NOTES_v*.md
 .DS_Store
 Thumbs.db
 *.log
