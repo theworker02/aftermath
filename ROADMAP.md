@@ -28,7 +28,6 @@ Honest plans for Aftermath. Items here are **intent**, not commitments or ship d
 
 - Hosted Aftermath SaaS / accounts
 - Required API keys or telemetry
-- Claiming Cursor Marketplace acceptance before it happens
 - Replacing human judgment with an “AI confidence score”
 
 Updates land in [CHANGELOG.md](./CHANGELOG.md) when shipped.

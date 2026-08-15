@@ -32,6 +32,8 @@ Discovery only uses scripts/commands that exist. Configure them under `[verify]`
 
 Yes. The CLI and core engine are standalone. The Cursor plugin is the primary UX for agent workflows.
 
-## Is Marketplace listing claimed?
+## Where can I find Aftermath for Cursor?
 
-No. As of 2026-08-13, submission may be pending; acceptance is not claimed until published.
+Aftermath is listed on [Cursor Directory](https://cursor.directory/plugins/aftermath):
+
+https://cursor.directory/plugins/aftermath

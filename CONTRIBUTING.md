@@ -8,7 +8,7 @@ Thanks for helping make independent verification better.
 - Local-first, no required cloud backend, no telemetry
 - Deterministic engine separate from Cursor UI/agent prompts
 - Prefer consolidated modules over tiny packaging theater
-- Company-grade docs: sharp, accurate, no Marketplace acceptance claims
+- Company-grade docs: sharp and accurate
 
 ## Development
 

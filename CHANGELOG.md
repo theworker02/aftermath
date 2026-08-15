@@ -2,6 +2,12 @@
 
 All notable changes to Aftermath will be documented in this file.
 
+## [Unreleased]
+
+### Changed
+
+- Document Aftermath on [Cursor Directory](https://cursor.directory/plugins/aftermath); remove pending Marketplace approval language from README, docs, and website
+
 ## [0.4.0] - 2026-08-13
 
 ### Added

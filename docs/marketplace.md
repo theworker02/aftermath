@@ -1,6 +1,10 @@
-# Marketplace readiness
+# Cursor Directory & plugin publishing
 
-Prepared for Cursor Marketplace submission:
+Aftermath is listed on Cursor Directory:
+
+**https://cursor.directory/plugins/aftermath**
+
+## Checklist
 
 - [x] `.cursor-plugin/plugin.json`
 - [x] README with install instructions
@@ -8,8 +12,8 @@ Prepared for Cursor Marketplace submission:
 - [x] SECURITY.md
 - [x] Branding assets
 - [x] Privacy statement (website + README)
+- [x] Cursor Directory listing
 - [ ] Demo GIF/video (`assets/demo.gif`) — capture from `examples/broken-project`
-- [ ] Marketplace acceptance (manual Cursor review; do not claim until granted)
 
-Open VSX companion extension publisher: `aftermath` (stable extension id).
+Open VSX companion extension publisher: `aftermath` (stable extension id).  
 Homepage for publisher verification: project GitHub Pages site.

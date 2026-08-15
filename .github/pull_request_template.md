@@ -8,5 +8,5 @@
 - [ ] (If UI/docs) spot-check website pages locally
 
 ## Notes
-- Do not claim Cursor Marketplace acceptance
 - Keep Aftermath local-first (no telemetry / required cloud)
+- Cursor Directory: https://cursor.directory/plugins/aftermath

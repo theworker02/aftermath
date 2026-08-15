@@ -19,7 +19,7 @@ Independent verification for agent-written code. Local-first. No telemetry.
 | [Privacy](./privacy.md) | Local-first, no telemetry |
 | [Threat model](./threat-model.md) | Security assumptions |
 | [Support](./support.md) | How to get help |
-| [Marketplace](./marketplace.md) | Cursor plugin publishing notes |
+| [Cursor Directory](./marketplace.md) | Listing & plugin publishing notes |
 | [Architecture](./architecture.md) | Engine layers |
 | [Topics](./topics.md) | Index of concepts |
 

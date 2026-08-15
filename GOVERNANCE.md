@@ -26,4 +26,3 @@ Semantic versioning for the npm package / plugin / extension versions kept in lo
 
 - Cloud verification backend
 - Telemetry or account systems
-- Claiming Cursor Marketplace acceptance before publication

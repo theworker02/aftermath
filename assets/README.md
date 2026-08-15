@@ -48,7 +48,6 @@ npm run prepare-assets
 - Place the mark on busy photography without a dark scrim
 - Stretch or rotate the logo
 - Add drop shadows, glows, or stickers on top of the mark
-- Claim Marketplace acceptance in branded materials until true
 
 ## Voice
 
