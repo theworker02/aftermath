@@ -14,13 +14,13 @@
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://github.com/theworker02/aftermath/releases"><img src="https://img.shields.io/github/v/release/theworker02/aftermath?include_prereleases&label=release" alt="Release"></a>
   <img src="https://img.shields.io/badge/node-%3E%3D20-3F6B4F?labelColor=0B0F14" alt="Node >= 20">
-  <a href="https://cursor.directory/plugins/aftermath"><img src="https://img.shields.io/badge/Cursor-Directory-111111?labelColor=0B0F14" alt="Cursor Directory"></a>
+  <a href="https://cursor.directory/c/magnexis"><img src="https://img.shields.io/badge/Cursor-Directory-111111?labelColor=0B0F14" alt="Cursor Directory"></a>
   <img src="https://img.shields.io/badge/privacy-local--first-3F6B4F" alt="Privacy">
   <img src="https://img.shields.io/badge/telemetry-none-111111?labelColor=0B0F14" alt="No telemetry">
 </p>
 
 <p align="center">
-  <a href="https://cursor.directory/plugins/aftermath">Cursor Directory</a> ·
+  <a href="https://cursor.directory/c/magnexis">Cursor Directory</a> ·
   <a href="./docs/user-guide.md">User guide</a> ·
   <a href="./docs/configuration.md">Configuration</a> ·
   <a href="./docs/ci.md">CI</a> ·
@@ -98,9 +98,9 @@ Then **Developer: Reload Window**. Allow third-party / user-local plugins in Cur
 
 ### Cursor Directory
 
-Install and browse Aftermath on [Cursor Directory](https://cursor.directory/plugins/aftermath):
+Install and browse Aftermath on [Cursor Directory](https://cursor.directory/c/magnexis):
 
-https://cursor.directory/plugins/aftermath
+https://cursor.directory/c/magnexis
 
 Local plugin development instructions remain below and in [docs/marketplace.md](./docs/marketplace.md).
 

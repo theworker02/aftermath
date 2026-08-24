@@ -9,4 +9,4 @@
 
 ## Notes
 - Keep Aftermath local-first (no telemetry / required cloud)
-- Cursor Directory: https://cursor.directory/plugins/aftermath
+- Cursor Directory: https://cursor.directory/c/magnexis

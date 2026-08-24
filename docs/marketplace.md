@@ -2,7 +2,7 @@
 
 Aftermath is listed on Cursor Directory:
 
-**https://cursor.directory/plugins/aftermath**
+**https://cursor.directory/c/magnexis**
 
 ## Checklist
 
