@@ -6,7 +6,7 @@ All notable changes to Aftermath will be documented in this file.
 
 ### Changed
 
-- Document Aftermath on [Cursor Directory](https://cursor.directory/plugins/aftermath); remove pending Marketplace approval language from README, docs, and website
+- Document Aftermath on [Cursor Directory](https://cursor.directory/c/magnexis); remove pending Marketplace approval language from README, docs, and website
 
 ## [0.4.0] - 2026-08-13
 
