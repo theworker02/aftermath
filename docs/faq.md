@@ -34,6 +34,6 @@ Yes. The CLI and core engine are standalone. The Cursor plugin is the primary UX
 
 ## Where can I find Aftermath for Cursor?
 
-Aftermath is listed on [Cursor Directory](https://cursor.directory/c/magnexis):
+Aftermath is listed on [Cursor Directory](https://cursor.directory/u/theworker02):
 
-https://cursor.directory/c/magnexis
+https://cursor.directory/u/theworker02
