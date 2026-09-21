@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="assets/banner.svg" alt="Aftermath">
 </p>
 
@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/theworker02/aftermath/actions/workflows/ci.yml"><img src="https://github.com/theworker02/aftermath/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Proprietary%20(source--available)-blue.svg" alt="License"></a>
   <a href="https://github.com/theworker02/aftermath/releases"><img src="https://img.shields.io/github/v/release/theworker02/aftermath?include_prereleases&label=release" alt="Release"></a>
   <img src="https://img.shields.io/badge/node-%3E%3D20-3F6B4F?labelColor=0B0F14" alt="Node >= 20">
   <a href="https://cursor.directory/u/theworker02"><img src="https://img.shields.io/badge/Cursor-Directory-111111?labelColor=0B0F14" alt="Cursor Directory"></a>
@@ -20,11 +20,11 @@
 </p>
 
 <p align="center">
-  <a href="https://cursor.directory/u/theworker02">Cursor Directory</a> ·
-  <a href="./docs/user-guide.md">User guide</a> ·
-  <a href="./docs/configuration.md">Configuration</a> ·
-  <a href="./docs/ci.md">CI</a> ·
-  <a href="./docs/privacy.md">Privacy</a> ·
+  <a href="https://cursor.directory/u/theworker02">Cursor Directory</a> Â·
+  <a href="./docs/user-guide.md">User guide</a> Â·
+  <a href="./docs/configuration.md">Configuration</a> Â·
+  <a href="./docs/ci.md">CI</a> Â·
+  <a href="./docs/privacy.md">Privacy</a> Â·
   <a href="https://theworker02.github.io/aftermath/">Website</a>
 </p>
 
@@ -32,9 +32,9 @@
 
 ## What Aftermath is
 
-Cursor’s agent writes the code. **Aftermath determines whether the resulting repository actually works.**
+Cursorâ€™s agent writes the code. **Aftermath determines whether the resulting repository actually works.**
 
-Aftermath is an execution-backed verification layer for coding agents. It independently examines diffs, builds, tests, linters, type checkers, formatters, smoke tests, dependency changes, public API drift, warnings, benchmark regressions, artifacts, and repository health — then produces a durable **verification receipt** (human + machine-readable).
+Aftermath is an execution-backed verification layer for coding agents. It independently examines diffs, builds, tests, linters, type checkers, formatters, smoke tests, dependency changes, public API drift, warnings, benchmark regressions, artifacts, and repository health â€” then produces a durable **verification receipt** (human + machine-readable).
 
 It is **not** another AI code reviewer. Differentiation in one line:
 
@@ -55,34 +55,34 @@ Agents finish with confident completion messages. Repositories do not always agr
 
 ```text
 Cursor Agent
-    ↓
+    â†“
 "Implementation complete"
-    ↓
+    â†“
 Aftermath
-    ↓
+    â†“
 Build       PASS
 Tests       FAIL (4)
 Lint        +2 warnings
 API         1 break
 Deps        lockfile drift
-    ↓
+    â†“
 PARTIALLY VERIFIED
 ```
 
 ## How it works
 
 ```text
-Repository → Detect → Baseline → Diff → Discover commands → Plan
-    → Execute → Artifacts → Compare → Findings → Receipt (+ summary.json)
+Repository â†’ Detect â†’ Baseline â†’ Diff â†’ Discover commands â†’ Plan
+    â†’ Execute â†’ Artifacts â†’ Compare â†’ Findings â†’ Receipt (+ summary.json)
 ```
 
-Vocabulary: **Run · Receipt · Finding · Evidence · Baseline · Gate · Repair Context**
+Vocabulary: **Run Â· Receipt Â· Finding Â· Evidence Â· Baseline Â· Gate Â· Repair Context**
 
 `VERIFIED` means configured mandatory gates executed and passed. It does **not** mean the software is bug-free.
 
 ## Install
 
-### Cursor — local plugin (recommended while developing)
+### Cursor â€” local plugin (recommended while developing)
 
 Cursor loads local plugins from `~/.cursor/plugins/local`.
 
@@ -124,7 +124,7 @@ aftermath inspect latest
 aftermath receipt latest --html
 ```
 
-Requires **Node.js ≥ 20**.
+Requires **Node.js â‰¥ 20**.
 
 ## Quick start
 
@@ -133,8 +133,8 @@ Requires **Node.js ≥ 20**.
 3. `/aftermath-baseline`
 4. Let Cursor perform work.
 5. `/aftermath-verify` (or check `aftermath status`)
-6. If needed: `/aftermath-repair` → fix → `/aftermath-verify` again
-7. Optional: `aftermath compare latest` · `aftermath inspect latest` · `aftermath explain latest` · open `receipt.html`
+6. If needed: `/aftermath-repair` â†’ fix â†’ `/aftermath-verify` again
+7. Optional: `aftermath compare latest` Â· `aftermath inspect latest` Â· `aftermath explain latest` Â· open `receipt.html`
 
 ## Commands
 
@@ -212,19 +212,19 @@ See [docs/ci.md](./docs/ci.md).
 
 ```text
 .aftermath/
-├── baseline.json
-├── receipts/
-└── runs/0184/
-    ├── metadata.json
-    ├── diff.patch
-    ├── plan.json
-    ├── findings.json
-    ├── findings.sarif      # with --ci / --sarif
-    ├── summary.json        # CI-friendly machine summary
-    ├── repair-context.md
-    ├── receipt.json
-    ├── receipt.md
-    └── receipt.html        # shareable / screenshot-friendly
+â”œâ”€â”€ baseline.json
+â”œâ”€â”€ receipts/
+â””â”€â”€ runs/0184/
+    â”œâ”€â”€ metadata.json
+    â”œâ”€â”€ diff.patch
+    â”œâ”€â”€ plan.json
+    â”œâ”€â”€ findings.json
+    â”œâ”€â”€ findings.sarif      # with --ci / --sarif
+    â”œâ”€â”€ summary.json        # CI-friendly machine summary
+    â”œâ”€â”€ repair-context.md
+    â”œâ”€â”€ receipt.json
+    â”œâ”€â”€ receipt.md
+    â””â”€â”€ receipt.html        # shareable / screenshot-friendly
 ```
 
 Storage: when `.aftermath` run artifacts exceed `limits.max_run_storage_mb` (default 500), oldest runs are pruned after verify with notes on the receipt.
@@ -256,10 +256,10 @@ aftermath config validate
 
 Optional local MCP server (no cloud):
 
-- `aftermath_verify` · `aftermath_get_receipt` · `aftermath_get_findings`
-- `aftermath_get_baseline` · `aftermath_compare` · `aftermath_prepare_repair`
-- `aftermath_explain_finding` · `aftermath_inspect` · `aftermath_doctor`
-- `aftermath_config_validate` · `aftermath_baseline` · `aftermath_status`
+- `aftermath_verify` Â· `aftermath_get_receipt` Â· `aftermath_get_findings`
+- `aftermath_get_baseline` Â· `aftermath_compare` Â· `aftermath_prepare_repair`
+- `aftermath_explain_finding` Â· `aftermath_inspect` Â· `aftermath_doctor`
+- `aftermath_config_validate` Â· `aftermath_baseline` Â· `aftermath_status`
 
 Most receipt tools accept **`latest`**.
 ## Security & privacy
@@ -277,7 +277,7 @@ See [SECURITY.md](./SECURITY.md), [docs/threat-model.md](./docs/threat-model.md)
 | Layer | Role |
 |-------|------|
 | Cursor plugin | commands, skill, agents, rules, hooks |
-| Core engine | detection → plan → execute → compare → receipt |
+| Core engine | detection â†’ plan â†’ execute â†’ compare â†’ receipt |
 | CLI | same engine for terminals & CI |
 | MCP | agent-accessible deterministic tools |
 | Extension | optional UI (`publisher`: `aftermath`) |
@@ -299,9 +299,9 @@ Visual / transcript assets (until a recorded GIF ships):
 
 ## Supported ecosystems
 
-Rust · Go · Node/TypeScript · Python · Dart/Flutter · Ruby · .NET · Java
+Rust Â· Go Â· Node/TypeScript Â· Python Â· Dart/Flutter Â· Ruby Â· .NET Â· Java
 
-Discovery order: `.aftermath.toml` → CI workflows → package scripts → Makefile/just → ecosystem conventions. Aftermath never invents `npm test` if the script does not exist.
+Discovery order: `.aftermath.toml` â†’ CI workflows â†’ package scripts â†’ Makefile/just â†’ ecosystem conventions. Aftermath never invents `npm test` if the script does not exist.
 
 ## Documentation map
 
@@ -312,7 +312,7 @@ Discovery order: `.aftermath.toml` → CI workflows → package scripts → Make
 | [docs/faq.md](./docs/faq.md) | FAQ |
 | [docs/configuration.md](./docs/configuration.md) | Config reference |
 | [docs/ci.md](./docs/ci.md) | GitHub Actions / CI |
-| [docs/findings.md](./docs/findings.md) | Finding codes AF001–AF012 |
+| [docs/findings.md](./docs/findings.md) | Finding codes AF001â€“AF012 |
 | [docs/support.md](./docs/support.md) | Getting help |
 | [assets/README.md](./assets/README.md) | Brand guidelines |
 | [extension/README.md](./extension/README.md) | Companion extension |
@@ -332,20 +332,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Code of conduct: [CODE_OF_CONDUCT.md](
 
 - Issues: [github.com/theworker02/aftermath/issues](https://github.com/theworker02/aftermath/issues)
 - Support guide: [SUPPORT.md](./SUPPORT.md)
-- Sponsors: [github.com/sponsors/theworker02](https://github.com/sponsors/theworker02) · [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
+- Sponsors: [github.com/sponsors/theworker02](https://github.com/sponsors/theworker02) Â· [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
 
 ## License
 
-[MIT](./LICENSE) · Authors: [AUTHORS](./AUTHORS)
+**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
 
----
-
-```text
-AFTERMATH RECEIPT
-Configured verification gates:
-ALL PASSED
-VERDICT
-VERIFIED
-```
-
-The project succeeds when developers stop trusting an agent’s statement that work is finished and can instead inspect a durable, reproducible **receipt proving what was actually verified**.
