@@ -20,11 +20,11 @@
 </p>
 
 <p align="center">
-  <a href="https://cursor.directory/u/theworker02">Cursor Directory</a> Â·
-  <a href="./docs/user-guide.md">User guide</a> Â·
-  <a href="./docs/configuration.md">Configuration</a> Â·
-  <a href="./docs/ci.md">CI</a> Â·
-  <a href="./docs/privacy.md">Privacy</a> Â·
+  <a href="https://cursor.directory/u/theworker02">Cursor Directory</a> Ã‚Â·
+  <a href="./docs/user-guide.md">User guide</a> Ã‚Â·
+  <a href="./docs/configuration.md">Configuration</a> Ã‚Â·
+  <a href="./docs/ci.md">CI</a> Ã‚Â·
+  <a href="./docs/privacy.md">Privacy</a> Ã‚Â·
   <a href="https://theworker02.github.io/aftermath/">Website</a>
 </p>
 
@@ -32,9 +32,9 @@
 
 ## What Aftermath is
 
-Cursorâ€™s agent writes the code. **Aftermath determines whether the resulting repository actually works.**
+CursorÃ¢â‚¬â„¢s agent writes the code. **Aftermath determines whether the resulting repository actually works.**
 
-Aftermath is an execution-backed verification layer for coding agents. It independently examines diffs, builds, tests, linters, type checkers, formatters, smoke tests, dependency changes, public API drift, warnings, benchmark regressions, artifacts, and repository health â€” then produces a durable **verification receipt** (human + machine-readable).
+Aftermath is an execution-backed verification layer for coding agents. It independently examines diffs, builds, tests, linters, type checkers, formatters, smoke tests, dependency changes, public API drift, warnings, benchmark regressions, artifacts, and repository health Ã¢â‚¬â€ then produces a durable **verification receipt** (human + machine-readable).
 
 It is **not** another AI code reviewer. Differentiation in one line:
 
@@ -55,34 +55,34 @@ Agents finish with confident completion messages. Repositories do not always agr
 
 ```text
 Cursor Agent
-    â†“
+    Ã¢â€ â€œ
 "Implementation complete"
-    â†“
+    Ã¢â€ â€œ
 Aftermath
-    â†“
+    Ã¢â€ â€œ
 Build       PASS
 Tests       FAIL (4)
 Lint        +2 warnings
 API         1 break
 Deps        lockfile drift
-    â†“
+    Ã¢â€ â€œ
 PARTIALLY VERIFIED
 ```
 
 ## How it works
 
 ```text
-Repository â†’ Detect â†’ Baseline â†’ Diff â†’ Discover commands â†’ Plan
-    â†’ Execute â†’ Artifacts â†’ Compare â†’ Findings â†’ Receipt (+ summary.json)
+Repository Ã¢â€ â€™ Detect Ã¢â€ â€™ Baseline Ã¢â€ â€™ Diff Ã¢â€ â€™ Discover commands Ã¢â€ â€™ Plan
+    Ã¢â€ â€™ Execute Ã¢â€ â€™ Artifacts Ã¢â€ â€™ Compare Ã¢â€ â€™ Findings Ã¢â€ â€™ Receipt (+ summary.json)
 ```
 
-Vocabulary: **Run Â· Receipt Â· Finding Â· Evidence Â· Baseline Â· Gate Â· Repair Context**
+Vocabulary: **Run Ã‚Â· Receipt Ã‚Â· Finding Ã‚Â· Evidence Ã‚Â· Baseline Ã‚Â· Gate Ã‚Â· Repair Context**
 
 `VERIFIED` means configured mandatory gates executed and passed. It does **not** mean the software is bug-free.
 
 ## Install
 
-### Cursor â€” local plugin (recommended while developing)
+### Cursor Ã¢â‚¬â€ local plugin (recommended while developing)
 
 Cursor loads local plugins from `~/.cursor/plugins/local`.
 
@@ -124,7 +124,7 @@ aftermath inspect latest
 aftermath receipt latest --html
 ```
 
-Requires **Node.js â‰¥ 20**.
+Requires **Node.js Ã¢â€°Â¥ 20**.
 
 ## Quick start
 
@@ -133,8 +133,8 @@ Requires **Node.js â‰¥ 20**.
 3. `/aftermath-baseline`
 4. Let Cursor perform work.
 5. `/aftermath-verify` (or check `aftermath status`)
-6. If needed: `/aftermath-repair` â†’ fix â†’ `/aftermath-verify` again
-7. Optional: `aftermath compare latest` Â· `aftermath inspect latest` Â· `aftermath explain latest` Â· open `receipt.html`
+6. If needed: `/aftermath-repair` Ã¢â€ â€™ fix Ã¢â€ â€™ `/aftermath-verify` again
+7. Optional: `aftermath compare latest` Ã‚Â· `aftermath inspect latest` Ã‚Â· `aftermath explain latest` Ã‚Â· open `receipt.html`
 
 ## Commands
 
@@ -212,19 +212,19 @@ See [docs/ci.md](./docs/ci.md).
 
 ```text
 .aftermath/
-â”œâ”€â”€ baseline.json
-â”œâ”€â”€ receipts/
-â””â”€â”€ runs/0184/
-    â”œâ”€â”€ metadata.json
-    â”œâ”€â”€ diff.patch
-    â”œâ”€â”€ plan.json
-    â”œâ”€â”€ findings.json
-    â”œâ”€â”€ findings.sarif      # with --ci / --sarif
-    â”œâ”€â”€ summary.json        # CI-friendly machine summary
-    â”œâ”€â”€ repair-context.md
-    â”œâ”€â”€ receipt.json
-    â”œâ”€â”€ receipt.md
-    â””â”€â”€ receipt.html        # shareable / screenshot-friendly
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ baseline.json
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ receipts/
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ runs/0184/
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ metadata.json
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ diff.patch
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ plan.json
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ findings.json
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ findings.sarif      # with --ci / --sarif
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ summary.json        # CI-friendly machine summary
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ repair-context.md
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ receipt.json
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ receipt.md
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ receipt.html        # shareable / screenshot-friendly
 ```
 
 Storage: when `.aftermath` run artifacts exceed `limits.max_run_storage_mb` (default 500), oldest runs are pruned after verify with notes on the receipt.
@@ -256,10 +256,10 @@ aftermath config validate
 
 Optional local MCP server (no cloud):
 
-- `aftermath_verify` Â· `aftermath_get_receipt` Â· `aftermath_get_findings`
-- `aftermath_get_baseline` Â· `aftermath_compare` Â· `aftermath_prepare_repair`
-- `aftermath_explain_finding` Â· `aftermath_inspect` Â· `aftermath_doctor`
-- `aftermath_config_validate` Â· `aftermath_baseline` Â· `aftermath_status`
+- `aftermath_verify` Ã‚Â· `aftermath_get_receipt` Ã‚Â· `aftermath_get_findings`
+- `aftermath_get_baseline` Ã‚Â· `aftermath_compare` Ã‚Â· `aftermath_prepare_repair`
+- `aftermath_explain_finding` Ã‚Â· `aftermath_inspect` Ã‚Â· `aftermath_doctor`
+- `aftermath_config_validate` Ã‚Â· `aftermath_baseline` Ã‚Â· `aftermath_status`
 
 Most receipt tools accept **`latest`**.
 ## Security & privacy
@@ -277,7 +277,7 @@ See [SECURITY.md](./SECURITY.md), [docs/threat-model.md](./docs/threat-model.md)
 | Layer | Role |
 |-------|------|
 | Cursor plugin | commands, skill, agents, rules, hooks |
-| Core engine | detection â†’ plan â†’ execute â†’ compare â†’ receipt |
+| Core engine | detection Ã¢â€ â€™ plan Ã¢â€ â€™ execute Ã¢â€ â€™ compare Ã¢â€ â€™ receipt |
 | CLI | same engine for terminals & CI |
 | MCP | agent-accessible deterministic tools |
 | Extension | optional UI (`publisher`: `aftermath`) |
@@ -299,9 +299,9 @@ Visual / transcript assets (until a recorded GIF ships):
 
 ## Supported ecosystems
 
-Rust Â· Go Â· Node/TypeScript Â· Python Â· Dart/Flutter Â· Ruby Â· .NET Â· Java
+Rust Ã‚Â· Go Ã‚Â· Node/TypeScript Ã‚Â· Python Ã‚Â· Dart/Flutter Ã‚Â· Ruby Ã‚Â· .NET Ã‚Â· Java
 
-Discovery order: `.aftermath.toml` â†’ CI workflows â†’ package scripts â†’ Makefile/just â†’ ecosystem conventions. Aftermath never invents `npm test` if the script does not exist.
+Discovery order: `.aftermath.toml` Ã¢â€ â€™ CI workflows Ã¢â€ â€™ package scripts Ã¢â€ â€™ Makefile/just Ã¢â€ â€™ ecosystem conventions. Aftermath never invents `npm test` if the script does not exist.
 
 ## Documentation map
 
@@ -312,7 +312,7 @@ Discovery order: `.aftermath.toml` â†’ CI workflows â†’ package script
 | [docs/faq.md](./docs/faq.md) | FAQ |
 | [docs/configuration.md](./docs/configuration.md) | Config reference |
 | [docs/ci.md](./docs/ci.md) | GitHub Actions / CI |
-| [docs/findings.md](./docs/findings.md) | Finding codes AF001â€“AF012 |
+| [docs/findings.md](./docs/findings.md) | Finding codes AF001Ã¢â‚¬â€œAF012 |
 | [docs/support.md](./docs/support.md) | Getting help |
 | [assets/README.md](./assets/README.md) | Brand guidelines |
 | [extension/README.md](./extension/README.md) | Companion extension |
@@ -332,11 +332,11 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Code of conduct: [CODE_OF_CONDUCT.md](
 
 - Issues: [github.com/theworker02/aftermath/issues](https://github.com/theworker02/aftermath/issues)
 - Support guide: [SUPPORT.md](./SUPPORT.md)
-- Sponsors: [github.com/sponsors/theworker02](https://github.com/sponsors/theworker02) Â· [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
+- Sponsors: [github.com/sponsors/theworker02](https://github.com/sponsors/theworker02) Ã‚Â· [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
 
 ## License
 
-**Source-available proprietary** — evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
+**Source-available proprietary** â€” evaluation under [LICENSE](./LICENSE); commercial / production use via [COMMERCIAL.md](./COMMERCIAL.md). See [LICENSE_TRANSITION_NOTICE.md](./LICENSE_TRANSITION_NOTICE.md) and [NOTICE](./NOTICE).
 
 
 ---
@@ -344,3 +344,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md). Code of conduct: [CODE_OF_CONDUCT.md](
 ## License & acquisition
 
 This project is **proprietary**. Production use, redistribution, and commercial deployment require a written commercial license or completed acquisition. See [LICENSE](./LICENSE) and [ACQUISITION.md](./ACQUISITION.md). Contact [@theworker02](https://github.com/theworker02).
+
+## Acquisition diligence
+
+Buyer-facing diligence materials live in [docs/acquisition/](./docs/acquisition/). Commercial licensing contact path: [COMMERCIAL.md](./COMMERCIAL.md).
