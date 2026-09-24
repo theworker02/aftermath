@@ -46,3 +46,16 @@ See README “Receipts & machine output”. Baselines may be committed; run logs
 ## Future hooks
 
 Designed for later: coverage diffs, security scanning, mutation testing, GitHub check runs, receipt signing, SBOM comparison, Cloud Agent verification.
+
+## Testing
+
+```powershell
+pnpm install
+pnpm test
+```
+
+Vitest covers core classification and integration fixtures under `tests/`.
+
+## Commercial / acquisition
+
+See root [ACQUISITION.md](../ACQUISITION.md) and [acquisition/REPRODUCTION_COST.md](./acquisition/REPRODUCTION_COST.md). Portfolio roll-up: [REPRODUCTION_COST_ANALYSIS.md](https://github.com/theworker02/theworker02/blob/main/REPRODUCTION_COST_ANALYSIS.md).
